@@ -1,7 +1,7 @@
 # a simple script that you enter into the randomizer portal to randomly toggle 1-9
 # then go into the reset portal to reset them all.
 # made to show off the basics of SwitchAsm.
-
+# fully compiled example at PWGClTmmxKcEI https://everybodyedits.com/games/PWGClTmmxKcEI
 
 # reset 1-10
 
@@ -14,60 +14,71 @@
 # the resetting portal id
 #p_reset 3
 
+# all the switches
+#s1 1
+#s2 2
+#s3 3
+#s4 4
+#s5 5
+#s6 6
+#s7 7
+#s8 8
+#s9 9
+
 p_randomizer {
-	toggle 1
+	toggle s1
 	goto p_hub
 }
 
 p_randomizer {
-	toggle 2
+	toggle s2
 	goto p_hub
 }
 
 p_randomizer {
-	toggle 3
+	toggle s3
 	goto p_hub
 }
 
 p_randomizer {
-	toggle 4
+	toggle s4
 	goto p_hub
 }
 
 p_randomizer {
-	toggle 5
+	toggle s5
 	goto p_hub
 }
 
 p_randomizer {
-	toggle 6
+	toggle s6
 	goto p_hub
 }
 
 p_randomizer {
-	toggle 7
+	toggle s7
 	goto p_hub
 }
 
 p_randomizer {
-	toggle 8
+	toggle s8
 	goto p_hub
 }
 
 p_randomizer {
-	toggle 9
+	toggles s9
 	goto p_hub
 }
 
 p_reset {
-	reset 1 off
-	reset 2 off
-	reset 3 off
-	reset 4 off
-	reset 5 off
-	reset 6 off
-	reset 7 off
-	reset 8 off
-	reset 9 off
+	reset s1 off
+	reset s2 off
+	reset s3 off
+	reset s4 off
+	reset s5 off
+	reset s6 off
+	reset s7 off
+	reset s8 off
+	reset s9 off
 	goto p_hub
 }
